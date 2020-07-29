@@ -13,6 +13,15 @@ function togglePlay() {
         video.pause();
     }
 };
+function updateButtonIcon() {
+    if (video.paused) {
+        toggle.innerHTML = "►";
+    } else {
+        toggle.innerHTML = "❚ ❚";
+    }
+}
 
-video.addEventListener("click" , togglePlay);
-toggle.addEventListener("click" , togglePlay);
+video.addEventListener("click", togglePlay);
+video.addEventListener("click", updateButtonIcon);
+toggle.addEventListener("click", togglePlay);
+toggle.addEventListener("click", updateButtonIcon);
