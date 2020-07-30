@@ -6,6 +6,7 @@ const toggle = player.querySelector(".toggle");
 const skipButtons = player.querySelectorAll("[data-skip]");
 const ranges = player.querySelectorAll(".player__slider");
 const fullScreen = player.querySelector(".player__fullscreen");
+const title = document.querySelector(".title");
 
 function togglePlay() {
     if (video.paused) {
@@ -35,10 +36,13 @@ function scrub(e) {
 function toggleFullScreen() {
     if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen();
+        player.classList.add("fullscreen");
+        title.classList.add("fullscreen__title");
     } else {
       if (document.exitFullscreen) {
         document.exitFullscreen(); 
-        
+        player.classList.remove("fullscreen");
+        title.classList.remove("fullscreen__title");
       }
     }
   };
