@@ -16,7 +16,7 @@ function togglePlay() {
     }
 };
 function updateButtonIcon() {
-    const icon = this.paused ? "►" : "❚ ❚";
+    const icon = this.paused ? "►" : "❚❚";
     toggle.textContent = icon;
 };
 function skip() {
