@@ -1,6 +1,7 @@
 # SebPlayer
 ## Demo:
-![Demo](demo/demo.avi)
+![Demo](demo/demo.gif)
+
 ## Live:
 https://sebastianjuszczynski.github.io/Video-Player/
 ## Technologies
